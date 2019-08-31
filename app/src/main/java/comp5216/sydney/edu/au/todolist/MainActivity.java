@@ -1,3 +1,7 @@
+/*
+ * Copyright 2019 by BuaaFreeTime
+ */
+
 package comp5216.sydney.edu.au.todolist;
 
 import android.app.AlertDialog;
@@ -12,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -19,12 +24,13 @@ import java.util.Date;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    // Main page Class
 
     // Define variables
     ListView listView;
     ArrayList<ToDoItem> items;
     ArrayAdapter<ToDoItem> itemsAdapter;
-    ToDoItemDB db;
+    ToDoItemDB db; // local database
     ToDoItemDao toDoItemDao;
 
     // Define request code

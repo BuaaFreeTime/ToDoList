@@ -1,5 +1,8 @@
-package comp5216.sydney.edu.au.todolist;
+/*
+ * Copyright 2019 by BuaaFreeTime
+ */
 
+package comp5216.sydney.edu.au.todolist;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
@@ -7,11 +10,11 @@ import androidx.room.Entity;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-import java.util.Date;
 
 @Entity(tableName = "todolist", indices = {@Index("toDoItemID")})
 public class ToDoItemDF {
     // A database form class
+
     @PrimaryKey(autoGenerate = true)
     @NonNull
     @ColumnInfo(name = "toDoItemID")

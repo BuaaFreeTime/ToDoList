@@ -1,3 +1,7 @@
+/*
+ * Copyright 2019 by BuaaFreeTime
+ */
+
 package comp5216.sydney.edu.au.todolist;
 
 import android.app.Activity;
@@ -7,12 +11,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.Toast;
 
 
-public class EditToDoItemActivity extends Activity
-{
+public class EditToDoItemActivity extends Activity  {
+	// Edit page Class
+
+	// Define variables
 	public int position=0;
 	EditText etTitle;
 	EditText etText;
@@ -64,7 +68,8 @@ public class EditToDoItemActivity extends Activity
 				.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialogInterface, int i) {
 						// Cancel what have done
-						setResult(RESULT_CANCELED, getIntent()); // set result code and bundle data for response
+						// set result code and bundle data for response
+						setResult(RESULT_CANCELED, getIntent());
 						finish(); // closes the activity, pass data to parent
 					}
 				})
